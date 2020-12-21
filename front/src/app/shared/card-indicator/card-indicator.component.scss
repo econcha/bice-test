@@ -3,15 +3,26 @@
 mat-card img{
     object-fit: cover; /*this makes the image in src fit to the size specified below*/
     width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
-    height: 80%;
+    height: 40%;
   }
 
 .card-indicators {
     max-width: 280px;
+    height: 100%;
  
     &-divisa {
         background-image: url("#{$asset-images-path}/divisa.png");
         background-size: cover;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+        word-break: break-all;
+    }
+    .mat-card-actions {
+        position: absolute;
+        bottom: 30px;
+        left: 42%;
     }
 
 }

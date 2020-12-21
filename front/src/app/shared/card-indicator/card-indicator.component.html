@@ -6,16 +6,14 @@
     </mat-card-header>
     <img mat-card-image src="assets/images/euro.jpg" alt="Photo of a Shiba Inu">
     <mat-card-content>
-      <p class="p-0 m-0"><b>Nombre:</b> {{currency?.name}}</p>
-      <p class="p-0 m-0"><b>Fecha:</b> {{currency?.date}}</p>
-      <p class="p-0 m-0"><b>Valor:</b> {{currency?.value}}</p>
-      <p class="p-0 m-0"><b>Moneda:</b> {{currency?.unit}}</p>
+      <p><b>Nombre:</b> {{currency?.name}}</p>
+      <p><b>Fecha:</b> {{currency?.date}}</p>
+      <p><b>Valor:</b> {{currency?.value}}</p>
+      <p><b>Moneda:</b> {{currency?.unit}}</p>
     </mat-card-content>
     <mat-card-actions>
         <div class="d-flex justify-content-center">
             <mat-spinner-button  [options]="GET_DETAIL_BUTTON"  (btnClick)="getDetailCurrency()"> </mat-spinner-button>
-
         </div>
-
     </mat-card-actions>
   </mat-card>
