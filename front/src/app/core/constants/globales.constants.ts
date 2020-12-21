@@ -1,7 +1,7 @@
 
 export enum API_SERVICES {
-  LAST_INDICATORS = "onboarding-indecon/indicators/last",
-  DETAIL_INDICATOR= "onboarding-indecon/indicators"
+  LAST_INDICATORS = "bice-indicators/last",
+  DETAIL_INDICATOR= "bice-indicators"
 }
 
 export interface ICurrency {

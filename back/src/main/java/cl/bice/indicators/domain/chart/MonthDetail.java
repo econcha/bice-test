@@ -12,9 +12,7 @@ import java.util.DoubleSummaryStatistics;
 import java.util.List;
 
 @Getter
-@Setter
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
 @JsonIgnoreProperties
 public class MonthDetail {

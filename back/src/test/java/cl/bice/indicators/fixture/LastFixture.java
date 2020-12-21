@@ -1,7 +1,6 @@
 package cl.bice.indicators.fixture;
 
 import cl.bice.indicators.domain.LastIndicatorsResponse;
-import cl.bice.indicators.domain.valoresKey.RsValoresKey;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -21,17 +20,6 @@ public class LastFixture {
         return lastIndicatorsResponse;
     }
 
-    public static RsValoresKey getRsMetalesForKey() {
-        RsValoresKey key = new RsValoresKey();
-        try {
-            ObjectMapper mapper = new ObjectMapper()
-                    .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-            key = mapper.readValue(bodyRsForKey, RsValoresKey.class);
-        } catch (IOException e) {
-            new Throwable(e);
-        }
-        return key;
-    }
 
     public static String bodyRsForKey = "{\n" +
             "    \"key\": \"cobre\",\n" +

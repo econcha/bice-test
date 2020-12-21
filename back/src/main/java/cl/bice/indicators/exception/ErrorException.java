@@ -1,6 +1,7 @@
 package cl.bice.indicators.exception;
 
 import cl.bice.indicators.enums.ErrorIndicators;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -10,8 +11,8 @@ import org.springframework.http.HttpStatus;
 import java.time.LocalDateTime;
 
 @Getter
-@Setter
 @AllArgsConstructor
+@JsonIgnoreProperties({"cause", "stackTrace", "localizedMessage", "suppressed"})
 public class ErrorException  extends  RuntimeException {
     private String code;
     private String message;

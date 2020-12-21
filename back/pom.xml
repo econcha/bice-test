@@ -8,7 +8,7 @@
         <version>2.1.8.RELEASE</version>
         <relativePath/>
     </parent>
-    <groupId>cl.indecon.indicators</groupId>
+    <groupId>cl.bice.indicators</groupId>
     <artifactId>bice-indicators</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>bice-indicators</name>

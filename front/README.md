@@ -1,27 +1,28 @@
 # BiceIndicators
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+Proyecto realizado con `Angular 8, typescript`
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Correr `ng serve --open` para levantar servidor. Se levantará por defecto en `http://localhost:4200/`. El app se actualizarà automáticamente contra cada cambio realizado una vez levantado.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Correr `ng build` para buildear aplicacion. El comando generará una carpeta /dist en el root actual, el cual será el empaquetado que se debe subir al servidor web.
+
+## Arquitectura.
+
+La aplicación tiene carga de modulos lazy loading. Siendo el mòdulo `Landing` el mòdulo de la aplicacion.
+
+Modulos:
+ -- Landing : módulo de la aplicacion. Este modulo consta la vistas de   `home` y  `indicators`.
+ -- Shared  : modulo compartido . En este módulo estaràn todos los componentes reutilizables en la aplicacion.
+ -- Core    : módulo compartido . En este módulo estaràn todos los servicios, pipes, constants, interceptors utilizados en la aplicacion.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Correr `ng test` para ejecutar test vìa [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

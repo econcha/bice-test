@@ -10,7 +10,6 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponents;
 
 @Getter
-@Setter
 @Builder
 public class ApiRequest {
     private String apiName;

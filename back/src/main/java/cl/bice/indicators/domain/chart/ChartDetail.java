@@ -11,9 +11,7 @@ import lombok.Setter;
 import java.util.List;
 
 @Getter
-@Setter
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
 @JsonIgnoreProperties
 public class ChartDetail {

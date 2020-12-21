@@ -9,9 +9,7 @@ import lombok.Setter;
 import java.time.LocalDate;
 
 @Getter
-@Setter
 @AllArgsConstructor
-@NoArgsConstructor
 @JsonIgnoreProperties
 public class Value {
     LocalDate fecha;
