@@ -1,7 +1,7 @@
 <mat-progress-bar  class="btlr-3 btrr-3" mode="determinate" [value]="loader.progress$|async"></mat-progress-bar>
 <div class="limiter">
     <div class="row justify-content-center">
-        <div class="col" *ngFor="let currency of indicators;" class="m-4">
+        <div *ngFor="let currency of indicators;" class="m-4">
             <app-card-indicator [currency]="currency"></app-card-indicator>
         </div>
     </div>
