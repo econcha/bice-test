@@ -24,5 +24,7 @@ Archivo de configuracion `application.properties`:
 
 ### TEST
 
-Según IDE ejecutar test unitarios
--Para este desarrollo se utilizo `Intellij IDEA`, ubicarse en raíz de test `back\src\test\java\cl`, botón secundario y `Run tests with coverage`
+Según IDE ejecutar test
+
+- Cobertura test realizada a travès de test de integración.
+- Para este desarrollo se utilizo `Intellij IDEA`, ubicarse en raíz de test `back\src\test\java\cl`, botón secundario y `Run tests with coverage`
