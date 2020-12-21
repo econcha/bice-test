@@ -19,6 +19,10 @@ Modulos:
  -- Shared  : modulo compartido . En este módulo estaràn todos los componentes reutilizables en la aplicacion.
  -- Core    : módulo compartido . En este módulo estaràn todos los servicios, pipes, constants, interceptors utilizados en la aplicacion.
 
+La aplicacion utiliza dos API Backend : 
+   - `http://localhost:8096/bice-indicators/last`  --> Detalle actualizado de los indicadores
+   - `http://localhost:8096/bice-indicators/{indicator}/detail` --> detalle de un indicador y su variaciòn en el tiempo.
+   
 ## Running unit tests
 
 Correr `ng test` para ejecutar test vìa [Karma](https://karma-runner.github.io).
