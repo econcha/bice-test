@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+
+}
+
+#button-addon1 {
+  color: #ffc371;
+}
+
+i {
+  color: #ffc371;
+}
+
+.limiter {
+  max-width: $max-width-page;
+  margin: $spacing-0 auto;
+  padding: $spacing-0 15px;
+  height: 100%;
+  @include media-breakpoint-down(sm) {
+    max-width: 100%;
+  }
+  @include media-breakpoint-only(md) {
+    max-width: 96%;
+  }
+  @include media-breakpoint-only(lg) {
+    max-width: 960px;
+  }
+}

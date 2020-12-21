@@ -1,0 +1,7 @@
+.home { 
+    background-image: url("#{$asset-images-path}/indicadores.jpg");
+    animation: animation-content-zoom-in 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

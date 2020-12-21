@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Variación en el tiempo</h2>
+<mat-dialog-content class="mat-typography" *ngIf="!loading">
+  <mat-form-field appearance="outline">
+    <mat-label>Año</mat-label>
+    <mat-select [(value)]="anio" placeholder="Año" >
+      <mat-option>Selecciona un año...</mat-option>
+      <mat-option  (click)="loadStadistics()" *ngFor="let stadistic of detail.detail" [value]="stadistic">{{stadistic.anio}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <app-chart *ngIf="chart.active" [data]="chart.data" [label]="chart.label"></app-chart>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Volver</button>
+</mat-dialog-actions>

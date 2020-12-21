@@ -1,0 +1,82 @@
+back/HELP.md
+back/target/
+back/!.mvn/wrapper/maven-wrapper.jar
+back/!**/src/main/**
+back/!**/src/test/**
+back/.DS_Store
+back/.pmd
+back/.mvn/wrapper
+### STS ###
+back/.apt_generated
+back/.classpath
+back/.factorypath
+back/.project
+back/.settings
+back/.springBeans
+back/.sts4-cache
+back/mvnw
+back/mvnw.cmd
+
+### IntelliJ IDEA ###
+back/.idea
+back/*.iws
+back/*.iml
+back/*.ipr
+
+### NetBeans ###
+back/nbproject/private/
+back/nbbuild/
+back/dist/
+back/nbdist/
+back/.nb-gradle/
+back/build/
+
+### VS Code ###
+front/.vscode/
+fron/bin/
+
+
+# compiled output
+front/dist
+front/tmp
+front/out-tsc
+# Only exists if Bazel was run
+front/bazel-out
+
+# dependencies
+front/node_modules
+
+# profiling files
+front/chrome-profiler-events*.json
+front/speed-measure-plugin*.json
+
+# IDEs and editors
+front/.idea
+front/.project
+front/.classpath
+front/.c9/
+front/*.launch
+front/.settings/
+front/*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db

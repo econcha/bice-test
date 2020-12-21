@@ -1,0 +1,16 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+
+@import "./utilities/variables";
+
+@import "./base/base";
+@import "./base/typography";
+@import "./base/animations";
+
+@import "./components/footer";
+@import "./components/navbar";
+
+@import "./views/landing/home";
+@import "./views/landing/indicators";
